@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Matheus Mello</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <!--header design-->
+    <header>
+        <a href="#" class="logo"><span>M</span>atheus</a>
+
+        <ul class="navlist">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#experience">Experiences</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#services">Skills</a></li>
+        </ul>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!--home section design-->
+    <section class="home" id="home">
+        <div class="home-div">
+            <div class="home-text">
+                <div class="slide">
+                    <span class="one">Hello</span>
+                    <span class="two">I'm</span>
+                </div>
+                <h1>Matheus Mello</h1>
+                <h3>Back end<span> Developer</span></h3>
+                <div class="button">
+                    <a href="https://api.whatsapp.com/send/?phone=55984279225" target="_blank" class="btn">Say Hello</a>
+                    <a href="#portfolio" class="btn2"><span><i class="bx bx-play"></i></span>See my work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--about section design-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/about-me.png">
+        </div>
+
+        <div class="about-text">
+            <h2>About <span>Me</span></h2>
+            <h4>I enjoy talking about technology</h4>
+            <p>&bull; I am currently studying a bachelor's degree in computer science</p>
+            <p>&bull; <a class="link" href="https://cert.efset.org/zm4qaT" target="_blank">C2 Proficient English Level</a></p>
+            <p>&bull; Studying Spring Ecosystem</p>
+
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/matheusgmello/" target="_blank" class="btn-socials"><span><i class="bx bxl-linkedin"></i></span></a>
+                <a href="https://github.com/matheusgmello" target="_blank" class="btn-socials"><span><i class="bx bxl-github"></i></a>
+                <a href="https://www.instagram.com/mathgz_/" target="_blank" class="btn-socials"><span><i class="bx bxl-instagram"></i></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!--experience section design-->
+    <section class="experience" id="experience">
+        <div class="main-text">
+            <p>Profissional</p>
+            <h2><span>Work</span> experiences</h2>
+        </div>
+
+        <div class="timeline">
+
+            <!-- <div class="container">
+                <img src="img/icon.png">
+                <div class="text-box">
+                    <small>2023 - </small>
+                    <h5>Desenvolvedor Full-Stack - <span><b>Autônomo</b></span> </h5>
+                    <p><span>Criação e manutenção de:</span> Microserviços, SaaS, Rest Client, SQL Model, Interfaces, Sistemas CMS, Plugins</p>
+                    <p><span>Stack:</span> Java, Spring, Docker, AWS, SQL, React, WordPress</p>
+                </div>
+            </div> -->
+
+            <div class="container">
+                <img src="img/icon.png">
+                <div class="text-box">
+                    <small>2024 - <span>now</span></small>
+                    <h5>Back end developer - <span><b>Freelancer</b></span> </h5>
+                    <p>
+                        • Developing and maintaining performance web applications, server-side logic, and SaaS solutions
+                    </p>
+                    <p>
+                        • Stack - Java • Spring • PostgreSQL • React • Docker • Excel 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--portfolio section design-->
+    <section class="portfolio" id="portfolio">
+        <div class="main-text">
+            <p>Portfolio</p>
+            <h2>Last <span>Projects</span></h2>
+        </div>
+
+        <div class="portfolio-content">
+
+            <div class="row">
+                <img src="img/findafriend.png">
+                <div class="layer">
+                    <h5>FindAFriend</h5>
+                    <p>Full app for pet adoption by regions and states, using<br></p>
+                    <p>React • Node  • Docker • Typescript • JWT • PostgreSQL</p>
+                        <a href="https://github.com/matheusgmello/find-a-friend" target="_blank"><i
+                            class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="img/gestao-vagas.png">
+                <div class="layer">
+                    <h5>Gestão de Vagas Web</h5>
+                    <p>Complete application for managing vacancies, companies and applications.</p>
+                    <p>The interface was built using:<br> Thymeleaf • Java • Spring • JWT • Tailwind</p>
+                        <a href="https://github.com/matheusgmello/front-gestao-vagas" target="_blank"><i
+                            class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="img/gestao-vagas-backend.png">
+                <div class="layer">
+                    <h5>Gestão de Vagas API</h5>
+                    <p>Complete API where authenticated users can create their login, or companies can register to publish their vacancies</p> <br>
+                    <p>Java • Spring • Docker • Grafana • Prometheus • JUnit • PostgreSQL • Swagger</p>
+                        <a href="https://github.com/matheusgmello/gestao-vagas" target="_blank"><i
+                            class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!--about section design-->
+    <section class="services" id="services">
+        <div class="main-text">
+            <p>My knowledges</p>
+            <h2><span>My</span> Skills</h2>
+        </div>
+
+        <div class="services-content">
+            <div class="box">
+                <div class="s-icons">
+                    <i class="bx bxl-java"></i>
+                </div>
+                <h3>Java</h3>
+            </div>
+
+            <div class="box">
+                <div class="s-icons">
+                    <i class="bx bxl-spring-boot"></i>
+                </div>
+                <h3>Spring Ecosystem</h3>
+            </div>
+
+            <div class="box">
+                <div class="s-icons">
+                    <i class="bx bxl-docker"></i>
+                </div>
+                <h3>Docker</h3>
+            </div>
+
+            <div class="box">
+                <div class="s-icons">
+                    <i class="bx bxl-aws"></i>
+                </div>
+                <h3>Amazon Web Services</h3>
+            </div>
+
+            <div class="box">
+                <div class="s-icons">
+                    <i class="bx bxl-react"></i>
+                </div>
+                <h3>React</h3>
+            </div>
+
+            <div class="box">
+                <div class="s-icons">
+                    <i class="bx bxl-tux"></i>
+                </div>
+                <h3>Linux</h3>
+            </div>
+
+            <div class="box">
+                <div class="s-icons">
+                    <i class="bx bx-mail-send"></i>
+                </div>
+                <h3>Apache Kafka</h3>
+            </div>
+
+            <div class="box">
+                <div class="s-icons">
+                    <i class="bx bxl-postgresql"></i>
+                </div>
+                <h3>PostgreSQL</h3>
+            </div>
+
+            <div class="box">
+                <div class="s-icons">
+                    <i class='bx bxl-trello'></i>
+                </div>
+                <h3>Trello</h3>
+            </div>
+        </div>
+    </section>
+
+    <!--end section design-->
+    <section class="end">
+        <div class="last-text">
+            <p>Copyright &#169; 2024 by Matheus Mello.</p>
+        </div>
+    </section>
+
+    <div id="top">
+        <a href="#home"><i class="bx bx-up-arrow-alt "></i></a>
+    </div>
+
+    <!--custom js link-->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
