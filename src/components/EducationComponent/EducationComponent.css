@@ -1,0 +1,48 @@
+.education-component__root {
+  user-select: none;
+  margin-top: 7vh;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  width: 100%;
+}
+
+.education-component__history {
+  margin-top: 5vh;
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1200px) {
+  .education-component__history {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .education-component__root {
+    user-select: none;
+    margin-top: 7vh;
+    margin-bottom: 20px;
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 0px;
+  }
+
+  .education-component__history {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

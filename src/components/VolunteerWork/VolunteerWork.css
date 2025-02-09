@@ -1,0 +1,28 @@
+.volunteer-work-component__root {
+  user-select: none;
+  margin-top: 7vh;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  width: 100%;
+}
+
+
+.volunteer-work-component__works {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 850px) {
+  .volunteer-work-component__root {
+    user-select: none;
+    margin-top: 7vh;
+    margin-bottom: 20px;
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 0px;
+  }
+}

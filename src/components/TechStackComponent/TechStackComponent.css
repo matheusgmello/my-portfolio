@@ -1,0 +1,28 @@
+.tech-stack-component__root {
+  user-select: none;
+  margin-top: 7vh;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  width: 100%;
+}
+
+.tech-stack-component__stacks {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 850px) {
+  .tech-stack-component__root {
+    user-select: none;
+    margin-top: 7vh;
+    margin-bottom: 20px;
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 0px;
+  }
+}
