@@ -6,7 +6,7 @@ import TitleSeperatorComponent from "../TitleSeperatorComponent/TitleSeperatorCo
 const VolunteerWork = () => {
   return (
     <div className="volunteer-work-component__root">
-      <TitleSeperatorComponent text="Volunteer Work" />
+      <TitleSeperatorComponent text="Trabalho Voluntário" />
       <div className="volunteer-work-component__works">
         {volunteerWorks.map((volunteerWork, index) => {
           return (

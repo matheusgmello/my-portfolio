@@ -8,7 +8,7 @@ import TitleSeperatorComponent from "../TitleSeperatorComponent/TitleSeperatorCo
 const ProjectComponent = () => {
   return (
     <div className="project-component__root">
-      <TitleSeperatorComponent text="Projects" />
+      <TitleSeperatorComponent text="Projetos" />
       <div className="project-component__projects">
         {projects.map((project, index) => {
           return <ProjectItem key={index} data={project} />;

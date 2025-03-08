@@ -21,14 +21,14 @@ const AccountList = () => {
       >
         <FaGithub size={36} />
       </div>
-      {/* <div
+      <div
         className="account-list__item stackOverFlow"
         onClick={() =>
-          openInNewTab("https://stackoverflow.com/users/")
+          openInNewTab("https://pt.stackoverflow.com/users/332248/matheus?tab=profile")
         }
       >
         <FaStackOverflow size={36} />
-      </div>{" "} */}
+      </div>{" "}
       {/* <div
         className="account-list__item mediumBlog"
         onClick={() => openInNewTab("https://medium.com/")}

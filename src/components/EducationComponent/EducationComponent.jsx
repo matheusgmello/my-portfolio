@@ -6,7 +6,7 @@ import TitleSeperatorComponent from "../TitleSeperatorComponent/TitleSeperatorCo
 const EducationComponent = () => {
   return (
     <div className="education-component__root">
-      <TitleSeperatorComponent text="Education" />
+      <TitleSeperatorComponent text="Educação " />
       <div className="education-component__history">
         {education.map((school, index) => {
           return <EducationItem key={index} data={school} />;

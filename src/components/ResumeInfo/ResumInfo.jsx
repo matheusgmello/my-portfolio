@@ -3,17 +3,28 @@ import "./ResumeInfo.css";
 
 
 const ResumeInfo = () => {
+/**
+ * Attributes of the resume
+ * Email
+ * Address
+ * Date of Birth
+ * Languages
+ * Hobbies
+ */
+
   const attributes = [
     { name: "Email", value: "matheusgmello1@gmail.com" },
-    { name: "Address", value: "Brasil" },
-    { name: "Date of Birth", value: "2005" },
-    { name: "Languages", value: "Portuguese\nEnglish" },
-    { name: "Hobbies", value: "Games and Books" },
+    { name: "Endereço", value: "Brasil" },
+    //{ name: "Date of Birth", value: "2005" },
+    { name: "Idiomas", value: "Português\nInglês" },
+    { name: "Hobbies", value: "Jogos e academia" },
   ];
 
   return (
+
+    // About me
     <div className="resume-info__root">
-      <span className="resume-info__title">About</span>
+      <span className="resume-info__title">Sobre</span>
       <div>
         {attributes.map((attribute, index) => {
           return (

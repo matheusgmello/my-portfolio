@@ -4,7 +4,7 @@ export const experiences = [
     company: "Mauri Corretora de Seguros",
     location: "Brasil",
     jobDescription:
-      "Responsible for developing the broker's website and system, connecting APIs and UI/UX design.",
+      "Responsável pelo desenvolvimento do site e sistema da corretora, conectando APIs e design de UI/UX.",
     startDate: "09/2024",
     endDate: "01/2025",
   },

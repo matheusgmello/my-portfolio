@@ -6,7 +6,7 @@ import TitleSeperatorComponent from "../TitleSeperatorComponent/TitleSeperatorCo
 const ExperienceComponent = () => {
   return (
     <div className="experience-component__root">
-      <TitleSeperatorComponent text="Experience" />
+      <TitleSeperatorComponent text="Experiência" />
       <div className="experience-component__experiences">
         {experiences.map((experience, index) => {
           return (

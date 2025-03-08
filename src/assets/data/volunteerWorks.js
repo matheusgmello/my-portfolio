@@ -1,9 +1,9 @@
 export const volunteerWorks = [
   {
     company: "Basílica Nossa Senhora Medianeira",
-    title: "Volunteer Instructor",
+    title: "Instrutor Voluntário",
     jobDescription:
-      "I worked as a volunteer in the kitchen area, helping to prepare food for the Pilgrimage, which takes place in November every year in the city of Santa Maria, RS.",
+      "Trabalhei como voluntária na área da cozinha, ajudando a preparar alimentos para a Romaria, que acontece todo mês de novembro na cidade de Santa Maria, RS.",
     startDate: "09/2023",
     endDate: "01/2025",
   },
