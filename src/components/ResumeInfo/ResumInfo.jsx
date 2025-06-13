@@ -17,7 +17,7 @@ const ResumeInfo = () => {
     { name: "Endereço", value: "Brasil" },
     //{ name: "Date of Birth", value: "2005" },
     { name: "Idiomas", value: "Português\nInglês" },
-    { name: "Hobbies", value: "Jogos e academia" },
+    //{ name: "Hobbies", value: "Jogos e academia" },
   ];
 
   return (

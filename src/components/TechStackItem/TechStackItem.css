@@ -20,7 +20,7 @@
 
 .tech-stack-item__root:hover {
   transform: scale(1.1);
-  background: rgb(233, 233, 233);
+  background: #474954;
   color: #439DD9;
 }
 

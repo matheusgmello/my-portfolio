@@ -6,7 +6,7 @@ export const projects = [
      */
 
     projectName: "Mauri Corretora de Seguros",
-    projectDescription: "Uma das maiores corretoras do Rio Grande do Sul, onde fui responsável pelo desenvolvimento do site, desempenhando um papel significativo na rede de seguros do Brasil.",
+    projectDescription: "Uma grande corretora do Rio Grande do Sul que tem um papel significativo na rede de seguros do Brasil, onde fui desenvolvedor web, desempenhando um papel significativo no website e no sistema da corretora.",
     projectLink: "https://www.mauricorretora.com.br/",
     projectImage:
       "/images/mauri.png",
@@ -19,7 +19,7 @@ export const projects = [
 
     projectName: "Gestão de Vagas",
     projectDescription:
-      "Neste projeto, é simulada a funcionalidade de um sistema de gestão empresarial, vagas de emprego e candidaturas.",
+      "Sistema de gestão de empresas e vagas (LinkedIn), desenvolvido em Spring Boot. Candidatos e empresas interagem. Inclui autenticação, persistência, Swagger, e monitoramento com Prometheus/Grafana.",
     projectLink: "https://www.linkedin.com/posts/activity-7235239910121627648-Ak6-?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEPEwiwBPOn1a_I3y5bh7UpA3Qi7LWY1vSs",
     projectImage: "https://github.com/matheusgmello/front-gestao-vagas/blob/main/img/cover.png?raw=true",
   },
@@ -31,7 +31,7 @@ export const projects = [
 
     projectName: "Find a Friend",
     projectDescription:
-      "Aplicativo web para adoção de animais para ONGs, desenvolvido para o Bootcamp da Rocketseat.",
+      "Aplicativo web para adoção de animais para ONGs, desenvolvido durante o Bootcamp da Rocketseat.",
     projectLink: "https://github.com/matheusgmello/find-a-friend",
     projectImage: "https://raw.githubusercontent.com/matheusgmello/find-a-friend/refs/heads/main/.github/cover.png",
   },

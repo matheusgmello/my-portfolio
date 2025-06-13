@@ -17,7 +17,7 @@ const WelcomeText = () => {
         <span className="welcome-text__item">
           {/* Eu sou{" "} */}
           <strong className="welcome-text__item__strong">
-            Desenvolvedor de Software
+            Desenvolvedor Backend
           </strong>
         </span>
       </div>

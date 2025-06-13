@@ -47,4 +47,7 @@ export const techStack = [
   {
     name: "PHP",
   },
+  {
+    name: "C++",
+  },
 ];

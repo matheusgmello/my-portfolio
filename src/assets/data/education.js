@@ -1,7 +1,7 @@
 export const education = [
   {
     name: "Universidade Federal de Santa Maria",
-    degree: "CST em Sistemas para Internet",
+    degree: "Graduação em Sistemas para Internet",
     startDate: "2025",
     // endDate: "2028",
     expected: "2027",

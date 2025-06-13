@@ -14,7 +14,7 @@ const CoverLetterComponent = () => {
         - Desenvolvedor backend
       </span>
       <span className="cover-letter-component__content">
-      Desenvolvedor altamente motivado com experiência em desenvolvimento de software e paixão pela resolução de problemas. Capacidade na rápida adaptação a novas tecnologias e trabalhar eficientemente em um ambiente de equipe. Procurando um desafio onde eu possa continuar a crescer e contribuir significativamente
+      Desenvolvedor backend em formação pela UFSM, com experiência prática em projetos full stack utilizando tecnologias como Java, Spring Boot, Node.js, PHP, React e SQL. Atuo em iniciativas acadêmicas e pessoais, onde participo de soluções escaláveis, bem estruturadas. Tenho facilidade em trabalhar em equipe, me adaptar a novas tecnologias e estou sempre em busca de crescimento profissional e aprendizado contínuo.
       </span>
     </div>
   );

@@ -1,12 +1,14 @@
 export const experiences = [
   {
-    title: "Fullstack Developer",
+    title: "Desenvolvedor Full Stack",
     company: "Mauri Corretora de Seguros",
     location: "Brasil",
-    jobDescription:
-      "Responsável pelo desenvolvimento do site e sistema da corretora, conectando APIs e design de UI/UX.",
+    jobDescription: `Desenvolvimento de um site institucional para corretora, com foco na otimização de performance, na acessibilidade e na integração com sistemas de corretagem.\n
+    • Implementação da UI e UX, juntamente da API de corretagem.
+    • Perfomance otimizada em 56%, melhorando o fluxo e carregamento de dados.
+    • Implementação de APIs para funcionalidades como contato e orçamento.`,
     startDate: "09/2024",
-    endDate: "01/2025",
+    endDate: "04/2025",
   },
   // {
   //   title: "Mock",
