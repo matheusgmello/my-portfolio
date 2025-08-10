@@ -21,7 +21,7 @@ export const projects = [
     projectDescription:
       "Sistema de gestão de empresas e vagas (LinkedIn), desenvolvido em Spring Boot. Candidatos e empresas interagem. Inclui autenticação, persistência, Swagger, e monitoramento com Prometheus/Grafana.",
     projectLink: "https://www.linkedin.com/posts/activity-7235239910121627648-Ak6-?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEPEwiwBPOn1a_I3y5bh7UpA3Qi7LWY1vSs",
-    projectImage: "https://github.com/matheusgmello/front-gestao-vagas/blob/main/img/cover.png?raw=true",
+    projectImage: "https://github.com/matheusgmello/gestao-vagas/blob/main/images/cover.png?raw=true",
   },
   {
     /**
