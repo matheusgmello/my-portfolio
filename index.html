@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matheus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
+  <style>
+    .font-geist {
+      font-family: 'Geist', sans-serif;
+    }
+
+    .font-inter {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .font-mono {
+      font-family: 'Geist Mono', monospace;
+    }
+
+    .font-spacegrotesk {
+      font-family: 'Space Grotesk', monospace;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .nav-link {
+      opacity: 0.7;
+      transition: opacity 0.2s ease;
+    }
+
+    .nav-link:hover {
+      opacity: 1;
+    }
+
+    .hover-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      color: #3b82f6;
+      text-decoration: none;
+    }
+
+    .hover-link:hover {
+      text-decoration: underline;
+    }
+
+    .skill-pill {
+      display: inline-block;
+      padding: 2px 8px;
+      background-color: #f3f4f6;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      border: 1px solid #d1d5db;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    }
+
+    .dark .skill-pill {
+      background-color: #1f2937;
+      border-color: #374151;
+    }
+
+    @keyframes ping-slow {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      50% {
+        transform: scale(1.35);
+        opacity: 0.7;
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .animate-ping-slow {
+      animation: ping-slow 1.2s infinite;
+    }
+  </style>
+</head>
+
+<body
+  class="bg-white dark:bg-neutral-900 text-black dark:text-white font-geist transition-colors duration-300 text-base sm:text-[1.05rem] md:text-lg font-inter">
+  <!-- NAVBAR -->
+  <nav class="w-full border-b border-gray-300 dark:border-gray-700 py-4">
+    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+      <span class="hidden md:inline text-base sm:text-lg md:text-xl font-regular">M</span>
+      
+
+      <div class="flex gap-6 items-center text-base sm:text-lg text-base">
+        <a href="#about" class="nav-link">About me</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#connect" class="nav-link">Connect</a>
+        <button id="themeToggle" class="w-6 h-6 flex items-center justify-center">
+          <i data-lucide="moon" class="dark:hidden"></i>
+          <i data-lucide="sun" class="hidden dark:block"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Hero Section with increased top spacing -->
+
+    <section class="my-20 grid md:grid-cols-2 gap-10 items-start">
+
+      <!-- Left column: text -->
+      <div>
+        <h1 class="text-4xl mb-4">Matheus Gabriel</h1>
+        <p class="text-base sm:text-lg md:text-xl font-normal mb-6">
+          software developer with 1+ years of experience in building
+          and debugging applications
+          focus on backend development
+        </p>
+        <p class="text-base opacity-70">SPECIALIZE IN:</p>
+        <p class="mb-4">Backend</p>
+        <p class="text-base opacity-70 mt-5">LANGUAGES KNOWN:</p>
+        <p>C, Java, Docker, Linux, GCP, Python, DialogFlow</p>
+        <a href="#" target="_blank"
+          class="hover-link text-blue-500 underline underline-offset-4 hover:underline hover:decoration-wavy">
+          Download my Resume <i data-lucide="download"></i>
+        </a>
+        <p class="text-base opacity-70 mt-5">CONNECT WITH ME:</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="https://github.com/matheusgmello" class="hover-link" target="_blank">GitHub <i
+              data-lucide="arrow-up-right"></i></a>
+          <a href="https://www.linkedin.com/in/matheusgmello/" class="hover-link" target="_blank">LinkedIn <i
+              data-lucide="arrow-up-right"></i></a>
+          <a href="mailto:matheusgmello1@gmail.com" class="hover-link" target="_blank">Email <i
+              data-lucide="arrow-up-right"></i></a>
+          <a href="http://lattes.cnpq.br/1888381284060438" class="hover-link" target="_blank">Lattes <i
+              data-lucide="arrow-up-right"></i></a>
+        </div>
+
+
+
+      </div>
+
+
+      <!-- Right column: image -->
+      <div class="flex justify-center md:justify-end">
+        <img src="assets/dp0.jpg" alt="Akash"
+          class="w-64 h-64 object-cover rounded-full transition-transform hover:scale-105" />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="mb-20">
+      <h2 class="font-spacegrotesk text-5xl font-black mb-4">about.</h2>
+      <p class="mb-6 leading-relaxed">
+        Software developer with over 1+ years of experience in building full-stack solutions with a focus on back-end
+        development. Currently an undergraduate student at the Federal University of Santa Maria, with experience in
+        full-stack development using <br>
+        Java, Python, C, Linux, SQL, and PHP. I'm also involved in academic initiatives such as extension and research
+        projects in applied computing for security and teaching.
+      </p>
+    </section>
+
+    <section id="skills" class="mb-20">
+      <h2 class="font-spacegrotesk text-5xl font-black mb-8">skills.</h2>
+
+      <!-- Responsive icons -->
+      <div class="flex flex-wrap gap-4 items-center mb-6">
+        <!-- Colored Devicons -->
+        <img src="assets/C.svg" alt="C" class="h-14 w-auto transition ease-in-out duration-150 hover:scale-125" />
+        <img src="assets/Java.svg" alt="C" class="h-14 w-auto transition ease-in-out duration-150 hover:scale-125" />
+        <img src="assets/Gcp.svg" alt="C" class="h-14 w-auto transition ease-in-out duration-150 hover:scale-125" />
+        <img src="assets/Linux-Dark.svg" alt="C"
+          class="h-14 w-auto transition ease-in-out duration-150 hover:scale-125" />
+        <img src="assets/Python.webp" alt="C" class="h-14 w-auto transition ease-in-out duration-150 hover:scale-125" />
+        <img src="assets/Spring.svg" alt="C" class="h-14 w-auto transition ease-in-out duration-150 hover:scale-125" />
+        <!-- <img src="assets/Github-Dark.svg" alt="C" class="h-14 w-auto transition ease-in-out duration-150 hover:scale-125"/> -->
+        <img src="assets/postgresql.svg" alt="C"
+          class="h-14 w-auto transition ease-in-out duration-150 hover:scale-125" />
+        <img src="assets/javascript.svg" alt="C"
+          class="h-14 w-auto transition ease-in-out duration-150 hover:scale-125" />
+        <img src="assets/DialogFlow.svg" alt="C"
+          class="h-14 w-auto transition ease-in-out duration-150 hover:scale-125" />
+        <img src="assets/Docker.svg" alt="C" class="h-14 w-auto transition ease-in-out duration-150 hover:scale-125" />
+      </div>
+      <!-- Skill pills -->
+      <div class="flex flex-wrap gap-2">
+        <span class="skill-pill">Java</span>
+        <span class="skill-pill">Docker</span>
+        <span class="skill-pill">SQL</span>
+        <span class="skill-pill">Linux</span>
+        <span class="skill-pill">Spring</span>
+        <span class="skill-pill">GCP</span>
+      </div>
+    </section>
+
+    <!-- Works Section -->
+    <section id="work" class="mb-20">
+      <h2 class="font-spacegrotesk text-5xl font-black mb-8">work.</h2>
+      <!-- Work Experience 1 -->
+      <div class="mb-10 flex flex-col items-start gap-4">
+        <!-- <img src="assets/infy-blue.png" alt="Infosys logo" class="h-auto w-60 dark:hidden" />
+    <img src="assets/infy-white.png" alt="Infosys logo (dark)" class="h-auto w-60 hidden dark:block" /> -->
+
+        <div>
+          <h3 class="font-mono text-base sm:text-lg md:text-xl text-gray-500 dark:text-gray-400">UFSM CPD</h3>
+          <p class="font-inter text-lg sm:text-2xl md:text-3xl lg:text-4xl mb-2">AI Backend Developer</p>
+          <p class="font-spacegrotesk text-base text-gray-500 dark:text-gray-400 mb-2">Santa Maria, Brazil</p>
+          <ul class="font-inter space-y-3 text-base sm:text-lg md:text-xl leading-relaxed">
+            <li class="flex items-start gap-2">
+              <i data-lucide="chevron-right" class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i>
+              <span>Natural Language Processing (NLP) API integrations.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="chevron-right" class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i>
+              <span>Structuring and integrating an academic FAQ database into the chatbot.</span>
+            </li>
+
+            <li class="flex items-start gap-2">
+              <i data-lucide="chevron-right" class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i>
+              <span>Development and optimization of conversation flows and intents.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="chevron-right" class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i>
+              <span>Implementation of a functional prototype integrated into a simulated website.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="chevron-right" class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i>
+              <span>Internal testing and language adjustments for greater clarity and user autonomy.</span>
+            </li>
+            <!-- <li class="flex items-start gap-2">
+          <i data-lucide="chevron-right" class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i>
+          <span>Solid understanding of networking protocols such as DHCP, TCP, UDP, NAT, and key networking concepts relevant to broadband devices.</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <i data-lucide="chevron-right" class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i>
+          <span>Strongly skilled in Linux shell scripting, command-line utilities and custom script development.</span>
+        </li> -->
+          </ul>
+        </div>
+      </div>
+
+      <div class="mb-10 flex flex-col items-start gap-4">
+        <!-- <img src="assets/infy-blue.png" alt="Infosys logo" class="h-auto w-60 dark:hidden" />
+    <img src="assets/infy-white.png" alt="Infosys logo (dark)" class="h-auto w-60 hidden dark:block" /> -->
+
+        <div>
+          <h3 class="font-mono text-base sm:text-lg md:text-xl text-gray-500 dark:text-gray-400">Mauri Corretora</h3>
+          <p class="font-inter text-lg sm:text-2xl md:text-3xl lg:text-4xl mb-2">Web Fullstack Developer</p>
+          <p class="font-spacegrotesk text-base text-gray-500 dark:text-gray-400 mb-2">Passo Fundo, Brazil</p>
+          <ul class="font-inter space-y-3 text-base sm:text-lg md:text-xl leading-relaxed">
+            <li class="flex items-start gap-2">
+              <i data-lucide="chevron-right" class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i>
+              <span>Web development with a focus on usability (UI/UX) and performance via caching.</span>
+            </li>
+            <!-- <li class="flex items-start gap-2">
+          <i data-lucide="chevron-right" class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i>
+          <span>Worked on WebPA/WebConfig client development to enable secure and efficient cloud-based configuration management for RDK-B devices.</span>
+        </li> -->
+
+            <li class="flex items-start gap-2">
+              <i data-lucide="chevron-right" class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i>
+              <span>I optimized caching, achieving a 50% improvement in performance.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="chevron-right" class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i>
+              <span>Cloudflare hosting support.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="chevron-right" class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i>
+              <span>API implementations for insurance quotes and inquiries</span>
+            </li>
+            <!-- <li class="flex items-start gap-2">
+          <i data-lucide="chevron-right" class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i>
+          <span>simple description</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <i data-lucide="chevron-right" class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i>
+          <span>simple description.</span>
+        </li> -->
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="mb-20">
+      <h2 class="font-spacegrotesk text-5xl font-black mb-8">projects.</h2>
+      <div class="grid gap-6">
+        <div class="border-b border-gray-300 dark:border-gray-700 pb-6">
+          <h3 class="font-mono text-base sm:text-lg md:text-xl text-gray-500 dark:text-gray-400">Gestão Vagas</h3>
+          <p class="font-inter text-lg sm:text-2xl md:text-3xl lg:text-2xl mb-2">Company and vacancy management system,
+            inspired by LinkedIn.</p>
+          <a href="https://www.linkedin.com/posts/activity-7235239910121627648-Ak6-/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEPEwiwBPOn1a_I3y5bh7UpA3Qi7LWY1vSs"
+            class="text-base sm:text-lg md:text-xl hover-link" target="_blank">
+            GitHub <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+        <div class="border-b border-gray-300 dark:border-gray-700 pb-6">
+          <h3 class="font-mono text-base sm:text-lg md:text-xl text-gray-500 dark:text-gray-400">MagicFridgeAI</h3>
+          <p class="font-inter text-lg sm:text-2xl md:text-3xl lg:text-2xl mb-2">Smart refrigerator system, where
+            recipes are automatically generated through the Gemini API.
+          </p>
+          <a href="https://github.com/matheusgmello/geladeira-magica" class="text-base sm:text-lg md:text-xl hover-link"
+            target="_blank">
+            GitHub <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+        <div class="border-b border-gray-300 dark:border-gray-700 pb-6">
+          <h3 class="font-mono text-base sm:text-lg md:text-xl text-gray-500 dark:text-gray-400">Website Mauri Corretora
+          </h3>
+          <p class="font-inter text-lg sm:text-2xl md:text-3xl lg:text-2xl mb-2">Brokerage website built with php and
+            react.
+          </p>
+          <a href="https://www.mauricorretora.com.br/" class="text-base sm:text-lg md:text-xl hover-link"
+            target="_blank">
+            Link <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+        <div class="border-b border-gray-300 dark:border-gray-700 pb-6">
+          <h3 class="font-mono text-base sm:text-lg md:text-xl text-gray-500 dark:text-gray-400">Find a Friend</h3>
+          <p class="font-inter text-lg sm:text-2xl md:text-3xl lg:text-2xl mb-2">pet adoption system with search by city
+            and state.
+          </p>
+          <a href="https://github.com/matheusgmello/find-a-friend" class="text-base sm:text-lg md:text-xl hover-link"
+            target="_blank">
+            GitHub <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="connect" class="mb-20 text-center">
+      <!-- Profile Photo -->
+      <!-- <div class="flex justify-center mb-6">
+    <img src="assets/dp0.jpg" alt="Akash" class="w-10 h-auto object-cover rounded-full transition-transform hover:scale-105"/>
+  </div> -->
+      <div class="flex justify-center items-center gap-2 mt-4 text-sm sm:text-base text-gray-600 dark:text-gray-300">
+        <!-- Green Dot -->
+        <span class="h-3 w-3 bg-green-500 rounded-full animate-ping-slow"></span>
+        <span>Status: <span class="font-semibold text-green-600 dark:text-green-400">active</span></span>
+      </div>
+
+      <!-- Heading -->
+      <h2 class="text-3xl sm:text-4xl font-bold mb-4">Connect with Me</h2>
+
+      <!-- Social Links -->
+      <div class="flex justify-center flex-wrap gap-6 text-lg">
+        <a href="https://github.com/matheusgmello" target="_blank" class="hover-link inline-flex items-center gap-2">
+          <i data-lucide="github" class="w-5 h-5"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/matheusgmello/" target="_blank"
+          class="hover-link inline-flex items-center gap-2">
+          <i data-lucide="linkedin" class="w-5 h-5"></i> LinkedIn
+        </a>
+        <a href="mailto:matheusgmello1@gmail.com" target="_blank" class="hover-link inline-flex items-center gap-2">
+          <i data-lucide="mail" class="w-5 h-5"></i> Email
+        </a>
+        <!-- <a href="https://instagram.com/matheuszmello" target="_blank" class="hover-link inline-flex items-center gap-2">
+          <i data-lucide="instagram" class="w-5 h-5"></i> Instagram
+        </a> -->
+      </div>
+    </section>
+
+
+
+  </div>
+  <!-- Back to Top -->
+  <button id="backToTop" class="fixed bottom-6 right-6 flex flex-col items-center justify-center p-3
+  rounded-full bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-200
+  hover:bg-blue-500 hover:text-white dark:hover:bg-blue-500 dark:hover:text-white
+  transition-all shadow-lg" aria-label="Back to top">
+    <i data-lucide="arrow-up-to-line" class="w-5 h-5"></i>
+  </button>
+
+  <script>
+    lucide.createIcons();
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      const html = document.documentElement;
+      html.classList.toggle('dark');
+      lucide.createIcons();
+    });
+    // Show/hide on scroll
+    const btn = document.getElementById("backToTop");
+    window.addEventListener("scroll", () => {
+      btn.style.display = window.scrollY > 300 ? "flex" : "none";
+    });
+
+    btn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+  <!-- Footer -->
+  <footer
+    class="border-t border-gray-300 dark:border-gray-700 text-center text-md text-gray-700 dark:text-gray-200 py-5 mt-20">
+    made with more bugs than caffeine ☕ — © 2025 matheus
+  </footer>
+
+</body>
+
+</html>
