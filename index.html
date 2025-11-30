@@ -107,17 +107,21 @@
     <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
       <span class="hidden md:inline text-base sm:text-lg md:text-xl font-regular">M</span>
 
-
       <div class="flex gap-6 items-center text-base sm:text-lg text-base">
-        <a href="#about" class="nav-link">Sobre mim</a>
-        <a href="#skills" class="nav-link">Habilidades</a>
-        <a href="#work" class="nav-link">Experiência</a>
-        <a href="#projects" class="nav-link">Projetos</a>
-        <a href="#connect" class="nav-link">Contato</a>
-        <button id="themeToggle" class="w-6 h-6 flex items-center justify-center">
+        <a href="#about" class="nav-link"><span data-i18n="nav.about">Sobre mim</span></a>
+        <a href="#skills" class="nav-link"><span data-i18n="nav.skills">Habilidades</span></a>
+        <a href="#work" class="nav-link"><span data-i18n="nav.work">Experiência</span></a>
+        <a href="#projects" class="nav-link"><span data-i18n="nav.projects">Projetos</span></a>
+        <a href="#connect" class="nav-link"><span data-i18n="nav.connect">Contato</span></a>
+
+        <button id="themeToggle" class="w-6 h-6 flex items-center justify-center" aria-label="Alternar tema">
           <i data-lucide="moon" class="dark:hidden"></i>
           <i data-lucide="sun" class="hidden dark:block"></i>
         </button>
+
+        <!-- Language toggle -->
+        <button id="langToggle" class="w-10 h-6 flex items-center justify-center rounded text-sm border"
+          aria-label="Alternar idioma" title="EN / PT">EN</button>
       </div>
     </div>
   </nav>
@@ -130,46 +134,43 @@
 
       <!-- Left column: text -->
       <div>
-        <h1 class="text-4xl mb-4">Matheus Gabriel</h1>
-        <p class="text-base sm:text-lg md:text-xl font-normal mb-6">
+        <h1 class="text-4xl mb-4" data-i18n="hero.name">Matheus Gabriel</h1>
+        <p class="text-base sm:text-lg md:text-xl font-normal mb-6" data-i18n="hero.desc">
           desenvolvedor de software com mais de 1+ ano de experiência em construir aplicações fullstack
         </p>
-        <p class="text-base opacity-70">Foco:</p>
-        <p class="mb-4">Backend</p>
-        <p class="text-base opacity-70 mt-5">LINGUAGENS E TECNOLOGIAS CONHECIDAS:</p>
-        <p>C, Java, Docker, Linux, GCP/AWS, Python</p>
+        <p class="text-base opacity-70"><span data-i18n="hero.focus">Foco:</span></p>
+        <p class="mb-4"><span data-i18n="hero.backend">Backend</span></p>
+        <p class="text-base opacity-70 mt-5"><span data-i18n="hero.techs_label">LINGUAGENS E TECNOLOGIAS
+            CONHECIDAS:</span></p>
+        <p data-i18n="hero.techs">C, Java, Docker, Linux, GCP/AWS, Python</p>
         <a href="#" target="_blank"
           class="hover-link text-blue-500 underline underline-offset-4 hover:underline hover:decoration-wavy">
-          Baixar meu currículo <i data-lucide="download"></i>
+          <span data-i18n="hero.cv">Baixar meu currículo</span> <i data-lucide="download"></i>
         </a>
-        <p class="text-base opacity-70 mt-5">CONECTE-SE COMIGO:</p>
+        <p class="text-base opacity-70 mt-5"><span data-i18n="hero.connect_label">CONECTE-SE COMIGO:</span></p>
         <div class="flex flex-wrap gap-4">
-          <a href="https://github.com/matheusgmello" class="hover-link" target="_blank">GitHub <i
-              data-lucide="arrow-up-right"></i></a>
-          <a href="https://www.linkedin.com/in/matheusgmello/" class="hover-link" target="_blank">LinkedIn <i
-              data-lucide="arrow-up-right"></i></a>
-          <a href="mailto:matheusgmello1@gmail.com" class="hover-link" target="_blank">Email <i
-              data-lucide="arrow-up-right"></i></a>
-          <a href="http://lattes.cnpq.br/1888381284060438" class="hover-link" target="_blank">Lattes <i
-              data-lucide="arrow-up-right"></i></a>
+          <a href="https://github.com/matheusgmello" class="hover-link" target="_blank"><span
+              data-i18n="social.github">GitHub</span> <i data-lucide="arrow-up-right"></i></a>
+          <a href="https://www.linkedin.com/in/matheusgmello/" class="hover-link" target="_blank"><span
+              data-i18n="social.linkedin">LinkedIn</span> <i data-lucide="arrow-up-right"></i></a>
+          <a href="mailto:matheusgmello1@gmail.com" class="hover-link" target="_blank"><span
+              data-i18n="social.email">Email</span> <i data-lucide="arrow-up-right"></i></a>
+          <a href="http://lattes.cnpq.br/1888381284060438" class="hover-link" target="_blank"><span
+              data-i18n="social.lattes">Lattes</span> <i data-lucide="arrow-up-right"></i></a>
         </div>
-
-
-
       </div>
-
 
       <!-- Right column: image -->
       <div class="flex justify-center md:justify-end">
-        <img src="assets/myself.jpg" alt="Matheus"
+        <img src="assets/myself.jpg" alt="Matheus" data-i18n="img.profile_alt"
           class="w-64 h-64 object-cover rounded-full transition-transform hover:scale-105" />
       </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="mb-20">
-      <h2 class="font-spacegrotesk text-5xl font-black mb-4">sobre.</h2>
-      <p class="mb-6 leading-relaxed">
+      <h2 class="font-spacegrotesk text-5xl font-black mb-4" data-i18n="about.title">sobre.</h2>
+      <p class="mb-6 leading-relaxed" data-i18n="about.desc">
         Desenvolvedor de software com mais de 1 ano de experiência em construir soluções full-stack com foco em
         back-end.
         Atualmente em graduação na Universidade Federal de Santa Maria, com experiência profissional e acadêmica em
@@ -180,7 +181,7 @@
     </section>
 
     <section id="skills" class="mb-20">
-      <h2 class="font-spacegrotesk text-5xl font-black mb-8">habilidades.</h2>
+      <h2 class="font-spacegrotesk text-5xl font-black mb-8" data-i18n="skills.title">habilidades.</h2>
 
       <!-- Responsive icons -->
       <div class="flex flex-wrap gap-4 items-center mb-6">
@@ -215,169 +216,124 @@
 
     <!-- Works Section -->
     <section id="work" class="mb-20">
-      <h2 class="font-spacegrotesk text-5xl font-black mb-8">experiência.</h2>
+      <h2 class="font-spacegrotesk text-5xl font-black mb-8" data-i18n="work.title">experiência.</h2>
       <!-- Work Experience 1 -->
       <div class="mb-10 flex flex-col items-start gap-4">
-        <!-- <img src="assets/infy-blue.png" alt="Infosys logo" class="h-auto w-60 dark:hidden" />
-    <img src="assets/infy-white.png" alt="Infosys logo (dark)" class="h-auto w-60 hidden dark:block" /> -->
-
         <div>
           <h3 class="font-mono text-base sm:text-lg md:text-xl text-gray-500 dark:text-gray-400">CPD/COREM UFSM</h3>
-          <p class="font-inter text-lg sm:text-2xl md:text-3xl lg:text-4xl mb-2">Desenvolvedor Backend ChatBot/AI</p>
-          <p class="font-spacegrotesk text-base text-gray-500 dark:text-gray-400 mb-2">Santa Maria, Brasil</p>
+          <p class="font-inter text-lg sm:text-2xl md:text-3xl lg:text-4xl mb-2" data-i18n="work.ufsm.title">
+            Desenvolvedor Backend ChatBot/AI</p>
+          <p class="font-spacegrotesk text-base text-gray-500 dark:text-gray-400 mb-2" data-i18n="work.ufsm.location">
+            Santa Maria, Brasil</p>
           <ul class="font-inter space-y-3 text-base sm:text-lg md:text-xl leading-relaxed">
-            <li class="flex items-start gap-2">
-              <i data-lucide="chevron-right" class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i>
-              <span>Integrações de APIs de Processamento de Linguagem Natural (PLN).</span>
+            <li class="flex items-start gap-2"><i data-lucide="chevron-right"
+                class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i><span data-i18n="work.ufsm.li1">Integrações de
+                APIs de Processamento de Linguagem Natural (PLN).</span></li>
+            <li class="flex items-start gap-2"><i data-lucide="chevron-right"
+                class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i><span data-i18n="work.ufsm.li2">Estruturação e
+                integração de uma base de FAQ acadêmica para treinamento do ChatBot.</span></li>
+            <li class="flex items-start gap-2"><i data-lucide="chevron-right"
+                class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i><span
+                data-i18n="work.ufsm.li3">Desenvolvimento e otimização de fluxos de intents via DialogFlow CX/ES.</span>
             </li>
-            <li class="flex items-start gap-2">
-              <i data-lucide="chevron-right" class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i>
-              <span>Estruturação e integração de uma base de FAQ acadêmica para treinamento do ChatBot.</span>
-            </li>
-
-            <li class="flex items-start gap-2">
-              <i data-lucide="chevron-right" class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i>
-              <span>Desenvolvimento e otimização de fluxos de intents via DialogFlow CX/ES.</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-lucide="chevron-right" class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i>
-              <span>Desenvolviemetno de webhooks, callbacks, fulfillment.</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-lucide="chevron-right" class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i>
-              <span>Testes de integração e end-to-end</span>
-            </li>
-            <!-- <li class="flex items-start gap-2">
-          <i data-lucide="chevron-right" class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i>
-          <span>Solid understanding of networking protocols such as DHCP, TCP, UDP, NAT, and key networking concepts relevant to broadband devices.</span>
-        </li>
-        <li class="flex items-start gap-2">
-          <i data-lucide="chevron-right" class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i>
-          <span>Strongly skilled in Linux shell scripting, command-line utilities and custom script development.</span>
-        </li> -->
+            <li class="flex items-start gap-2"><i data-lucide="chevron-right"
+                class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i><span
+                data-i18n="work.ufsm.li4">Desenvolviemetno de webhooks, callbacks, fulfillment.</span></li>
+            <li class="flex items-start gap-2"><i data-lucide="chevron-right"
+                class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i><span data-i18n="work.ufsm.li5">Testes de
+                integração e end-to-end</span></li>
           </ul>
         </div>
       </div>
 
       <div class="mb-10 flex flex-col items-start gap-4">
-        <!-- <img src="assets/infy-blue.png" alt="Infosys logo" class="h-auto w-60 dark:hidden" />
-    <img src="assets/infy-white.png" alt="Infosys logo (dark)" class="h-auto w-60 hidden dark:block" /> -->
-
         <div>
           <h3 class="font-mono text-base sm:text-lg md:text-xl text-gray-500 dark:text-gray-400">Mauri Corretora</h3>
-          <p class="font-inter text-lg sm:text-2xl md:text-3xl lg:text-4xl mb-2">Desenvolvedor Fullstack Web</p>
-          <p class="font-spacegrotesk text-base text-gray-500 dark:text-gray-400 mb-2">Passo Fundo, Brasil</p>
+          <p class="font-inter text-lg sm:text-2xl md:text-3xl lg:text-4xl mb-2" data-i18n="work.mauri.title">
+            Desenvolvedor Fullstack Web</p>
+          <p class="font-spacegrotesk text-base text-gray-500 dark:text-gray-400 mb-2" data-i18n="work.mauri.location">
+            Passo Fundo, Brasil</p>
           <ul class="font-inter space-y-3 text-base sm:text-lg md:text-xl leading-relaxed">
-            <li class="flex items-start gap-2">
-              <i data-lucide="chevron-right" class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i>
-              <span>Otimização de cache em mais de 55% de desempenho via CacheAPI</span>
-            </li>
-            <!-- <li class="flex items-start gap-2">
-          <i data-lucide="chevron-right" class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i>
-          <span>Worked on WebPA/WebConfig client development to enable secure and efficient cloud-based configuration management for RDK-B devices.</span>
-        </li> -->
-            <li class="flex items-start gap-2">
-              <i data-lucide="chevron-right" class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i>
-              <span>Hospedagem via CloudFlare</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-lucide="chevron-right" class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i>
-              <span>Implementações de APIs para cotações e consultas de seguros.</span>
-            </li>
-            <!-- <li class="flex items-start gap-2">
-          <i data-lucide="chevron-right" class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i>
-          <span>simple description</span>
-        </li>
-        <li class="flex items-start gap-2">
-          <i data-lucide="chevron-right" class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i>
-          <span>simple description.</span>
-        </li> -->
+            <li class="flex items-start gap-2"><i data-lucide="chevron-right"
+                class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i><span data-i18n="work.mauri.li1">Otimização de
+                cache em mais de 55% de desempenho via CacheAPI</span></li>
+            <li class="flex items-start gap-2"><i data-lucide="chevron-right"
+                class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i><span data-i18n="work.mauri.li2">Hospedagem
+                via CloudFlare</span></li>
+            <li class="flex items-start gap-2"><i data-lucide="chevron-right"
+                class="w-7 h-7 text-blue-500 dark:text-blue-400 mt-1"></i><span
+                data-i18n="work.mauri.li3">Implementações de APIs para cotações e consultas de seguros.</span></li>
           </ul>
         </div>
       </div>
     </section>
 
     <section id="projects" class="mb-20">
-      <h2 class="font-spacegrotesk text-5xl font-black mb-8">projetos.</h2>
+      <h2 class="font-spacegrotesk text-5xl font-black mb-8" data-i18n="projects.title">projetos.</h2>
       <div class="grid gap-6">
         <div class="border-b border-gray-300 dark:border-gray-700 pb-6">
           <h3 class="font-mono text-base sm:text-lg md:text-xl text-gray-500 dark:text-gray-400">Gestão Vagas</h3>
-          <p class="font-inter text-lg sm:text-2xl md:text-3xl lg:text-2xl mb-2">Sistema de gestão de empresas e vagas,
-            inspirado no LinkedIn.</p>
+          <p class="font-inter text-lg sm:text-2xl md:text-3xl lg:text-2xl mb-2" data-i18n="projects.gestaovagas.desc">
+            Sistema de gestão de empresas e vagas, inspirado no LinkedIn.</p>
           <a href="https://www.linkedin.com/posts/activity-7235239910121627648-Ak6-/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEPEwiwBPOn1a_I3y5bh7UpA3Qi7LWY1vSs"
             class="text-base sm:text-lg md:text-xl hover-link" target="_blank">
-            GitHub <i data-lucide="arrow-up-right"></i>
+            <span data-i18n="projects.link.github">GitHub</span> <i data-lucide="arrow-up-right"></i>
           </a>
         </div>
         <div class="border-b border-gray-300 dark:border-gray-700 pb-6">
           <h3 class="font-mono text-base sm:text-lg md:text-xl text-gray-500 dark:text-gray-400">MagicFridgeAI</h3>
-          <p class="font-inter text-lg sm:text-2xl md:text-3xl lg:text-2xl mb-2">Geladeira inteligente, onde
-            receitas são geradas automaticamente através da LLM API Gemini.
-          </p>
+          <p class="font-inter text-lg sm:text-2xl md:text-3xl lg:text-2xl mb-2" data-i18n="projects.magicfridge.desc">
+            Geladeira inteligente, onde receitas são geradas automaticamente através da LLM API Gemini.</p>
           <a href="https://github.com/matheusgmello/geladeira-magica" class="text-base sm:text-lg md:text-xl hover-link"
             target="_blank">
-            GitHub <i data-lucide="arrow-up-right"></i>
+            <span data-i18n="projects.link.github">GitHub</span> <i data-lucide="arrow-up-right"></i>
           </a>
         </div>
         <div class="border-b border-gray-300 dark:border-gray-700 pb-6">
           <h3 class="font-mono text-base sm:text-lg md:text-xl text-gray-500 dark:text-gray-400">Website Mauri Corretora
           </h3>
-          <p class="font-inter text-lg sm:text-2xl md:text-3xl lg:text-2xl mb-2">Construído com PHP e React para uma
-            corretora de seguros local.
-          </p>
+          <p class="font-inter text-lg sm:text-2xl md:text-3xl lg:text-2xl mb-2" data-i18n="projects.mauri.desc">
+            Construído com PHP e React para uma corretora de seguros local.</p>
           <a href="https://www.mauricorretora.com.br/" class="text-base sm:text-lg md:text-xl hover-link"
             target="_blank">
-            Link <i data-lucide="arrow-up-right"></i>
+            <span data-i18n="projects.link.site">Link</span> <i data-lucide="arrow-up-right"></i>
           </a>
         </div>
         <div class="border-b border-gray-300 dark:border-gray-700 pb-6">
           <h3 class="font-mono text-base sm:text-lg md:text-xl text-gray-500 dark:text-gray-400">Find a Friend</h3>
-          <p class="font-inter text-lg sm:text-2xl md:text-3xl lg:text-2xl mb-2">Sistema de adoção de animais com busca
-            por cidade
-            e estado.
-          </p>
+          <p class="font-inter text-lg sm:text-2xl md:text-3xl lg:text-2xl mb-2" data-i18n="projects.findafriend.desc">
+            Sistema de adoção de animais com busca por cidade e estado.</p>
           <a href="https://github.com/matheusgmello/find-a-friend" class="text-base sm:text-lg md:text-xl hover-link"
             target="_blank">
-            GitHub <i data-lucide="arrow-up-right"></i>
+            <span data-i18n="projects.link.github">GitHub</span> <i data-lucide="arrow-up-right"></i>
           </a>
         </div>
       </div>
     </section>
 
-
     <section id="connect" class="mb-20 text-center">
-      <!-- Profile Photo -->
-      <!-- <div class="flex justify-center mb-6">
-    <img src="assets/dp0.jpg" alt="Akash" class="w-10 h-auto object-cover rounded-full transition-transform hover:scale-105"/>
-  </div> -->
       <div class="flex justify-center items-center gap-2 mt-4 text-sm sm:text-base text-gray-600 dark:text-gray-300">
-        <!-- Green Dot -->
         <span class="h-3 w-3 bg-green-500 rounded-full animate-ping-slow"></span>
-        <span>Status: <span class="font-semibold text-green-600 dark:text-green-400">ativo</span></span>
+        <span><span data-i18n="connect.status_label">Status:</span> <span
+            class="font-semibold text-green-600 dark:text-green-400"
+            data-i18n="connect.status_active">ativo</span></span>
       </div>
 
-      <!-- Heading -->
-      <h2 class="text-3xl sm:text-4xl font-bold mb-4">Conecte-se comigo</h2>
+      <h2 class="text-3xl sm:text-4xl font-bold mb-4" data-i18n="connect.title">Conecte-se comigo</h2>
 
-      <!-- Social Links -->
       <div class="flex justify-center flex-wrap gap-6 text-lg">
         <a href="https://github.com/matheusgmello" target="_blank" class="hover-link inline-flex items-center gap-2">
-          <i data-lucide="github" class="w-5 h-5"></i> GitHub
+          <i data-lucide="github" class="w-5 h-5"></i> <span data-i18n="social.github">GitHub</span>
         </a>
         <a href="https://www.linkedin.com/in/matheusgmello/" target="_blank"
           class="hover-link inline-flex items-center gap-2">
-          <i data-lucide="linkedin" class="w-5 h-5"></i> LinkedIn
+          <i data-lucide="linkedin" class="w-5 h-5"></i> <span data-i18n="social.linkedin">LinkedIn</span>
         </a>
         <a href="mailto:matheusgmello1@gmail.com" target="_blank" class="hover-link inline-flex items-center gap-2">
-          <i data-lucide="mail" class="w-5 h-5"></i> Email
+          <i data-lucide="mail" class="w-5 h-5"></i> <span data-i18n="social.email">Email</span>
         </a>
-        <!-- <a href="https://instagram.com/matheuszmello" target="_blank" class="hover-link inline-flex items-center gap-2">
-          <i data-lucide="instagram" class="w-5 h-5"></i> Instagram
-        </a> -->
       </div>
     </section>
-
-
 
   </div>
   <!-- Back to Top -->
@@ -389,12 +345,142 @@
   </button>
 
   <script>
+    // traduções
+    const translations = {
+      pt: {
+        "nav.about": "Sobre mim",
+        "nav.skills": "Habilidades",
+        "nav.work": "Experiência",
+        "nav.projects": "Projetos",
+        "nav.connect": "Contato",
+        "hero.name": "Matheus Gabriel",
+        "hero.desc": "desenvolvedor de software com mais de 1+ ano de experiência em construir aplicações fullstack",
+        "hero.focus": "Foco:",
+        "hero.backend": "Backend",
+        "hero.techs_label": "LINGUAGENS E TECNOLOGIAS CONHECIDAS:",
+        "hero.techs": "C, Java, Docker, Linux, GCP/AWS, Python",
+        "hero.cv": "Baixar meu currículo",
+        "hero.connect_label": "CONECTE-SE COMIGO:",
+        "social.github": "GitHub",
+        "social.linkedin": "LinkedIn",
+        "social.email": "Email",
+        "social.lattes": "Lattes",
+        "img.profile_alt": "Matheus",
+        "about.title": "sobre.",
+        "about.desc": "Desenvolvedor de software com mais de 1 ano de experiência em construir soluções full-stack com foco em back-end. Atualmente em graduação na Universidade Federal de Santa Maria, com experiência profissional e acadêmica em desenvolvimento full-stack usando: Java, Python, C, Linux, SQL e PHP. Também participo de iniciativas acadêmicas como projetos de extensão e pesquisa em computação aplicada à segurança e ensino.",
+        "skills.title": "habilidades.",
+        "work.title": "experiência.",
+        "work.ufsm.title": "Desenvolvedor Backend ChatBot/AI",
+        "work.ufsm.location": "Santa Maria, Brasil",
+        "work.ufsm.li1": "Integrações de APIs de Processamento de Linguagem Natural (PLN).",
+        "work.ufsm.li2": "Estruturação e integração de uma base de FAQ acadêmica para treinamento do ChatBot.",
+        "work.ufsm.li3": "Desenvolvimento e otimização de fluxos de intents via DialogFlow CX/ES.",
+        "work.ufsm.li4": "Desenvolviemetno de webhooks, callbacks, fulfillment.",
+        "work.ufsm.li5": "Testes de integração e end-to-end",
+        "work.mauri.title": "Desenvolvedor Fullstack Web",
+        "work.mauri.location": "Passo Fundo, Brasil",
+        "work.mauri.li1": "Otimização de cache em mais de 55% de desempenho via CacheAPI",
+        "work.mauri.li2": "Hospedagem via CloudFlare",
+        "work.mauri.li3": "Implementações de APIs para cotações e consultas de seguros.",
+        "projects.title": "projetos.",
+        "projects.gestaovagas.desc": "Sistema de gestão de empresas e vagas, inspirado no LinkedIn.",
+        "projects.magicfridge.desc": "Geladeira inteligente, onde receitas são geradas automaticamente através da LLM API Gemini.",
+        "projects.mauri.desc": "Construído com PHP e React para uma corretora de seguros local.",
+        "projects.findafriend.desc": "Sistema de adoção de animais com busca por cidade e estado.",
+        "projects.link.github": "GitHub",
+        "projects.link.site": "Link",
+        "connect.status_label": "Status:",
+        "connect.status_active": "ativo",
+        "connect.title": "Conecte-se comigo",
+        "footer.text": "feito com mais bugs do que café ☕ — © 2026 matheus"
+      },
+      en: {
+        "nav.about": "About",
+        "nav.skills": "Skills",
+        "nav.work": "Experience",
+        "nav.projects": "Projects",
+        "nav.connect": "Contact",
+        "hero.name": "Matheus Gabriel",
+        "hero.desc": "software developer with over 1 year of experience building fullstack applications",
+        "hero.focus": "Focus:",
+        "hero.backend": "Backend",
+        "hero.techs_label": "KNOWN LANGUAGES & TECHNOLOGIES:",
+        "hero.techs": "C, Java, Docker, Linux, GCP/AWS, Python",
+        "hero.cv": "Download my resume",
+        "hero.connect_label": "CONNECT WITH ME:",
+        "social.github": "GitHub",
+        "social.linkedin": "LinkedIn",
+        "social.email": "Email",
+        "social.lattes": "Lattes",
+        "img.profile_alt": "Matheus",
+        "about.title": "about.",
+        "about.desc": "Software developer with over 1 year of experience building full-stack solutions focused on backend. Currently studying at Universidade Federal de Santa Maria, with professional and academic experience in full-stack development using: Java, Python, C, Linux, SQL and PHP. I also participate in academic initiatives such as extension projects and research in computing applied to security and teaching.",
+        "skills.title": "skills.",
+        "work.title": "experience.",
+        "work.ufsm.title": "Backend Developer ChatBot/AI",
+        "work.ufsm.location": "Santa Maria, Brazil",
+        "work.ufsm.li1": "Integrations with Natural Language Processing (NLP) APIs.",
+        "work.ufsm.li2": "Structuring and integrating an academic FAQ base for chatbot training.",
+        "work.ufsm.li3": "Development and optimization of intent flows via DialogFlow CX/ES.",
+        "work.ufsm.li4": "Development of webhooks, callbacks, fulfillment.",
+        "work.ufsm.li5": "Integration and end-to-end testing",
+        "work.mauri.title": "Fullstack Web Developer",
+        "work.mauri.location": "Passo Fundo, Brazil",
+        "work.mauri.li1": "Cache optimization improving performance by over 55% via CacheAPI",
+        "work.mauri.li2": "Hosting via CloudFlare",
+        "work.mauri.li3": "API implementations for insurance quotes and lookups.",
+        "projects.title": "projects.",
+        "projects.gestaovagas.desc": "Company and job management system, inspired by LinkedIn.",
+        "projects.magicfridge.desc": "Smart fridge where recipes are autogenerated via the Gemini LLM API.",
+        "projects.mauri.desc": "Website built with PHP and React for a local insurance broker.",
+        "projects.findafriend.desc": "Pet adoption system with search by city and state.",
+        "projects.link.github": "GitHub",
+        "projects.link.site": "Link",
+        "connect.status_label": "Status:",
+        "connect.status_active": "active",
+        "connect.title": "Connect with me",
+        "footer.text": "made with more bugs than coffee ☕ — © 2026 matheus"
+      }
+    };
+
+    function setLanguage(lang) {
+      const dict = translations[lang] || translations.pt;
+      // set html lang attribute
+      document.documentElement.lang = (lang === 'en') ? 'en' : 'pt-br';
+      // update all data-i18n elements
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const txt = dict[key];
+        if (!txt) return;
+        if (el.tagName.toLowerCase() === 'img') {
+          el.alt = txt;
+        } else {
+          el.textContent = txt;
+        }
+      });
+      // update button label
+      const langBtn = document.getElementById('langToggle');
+      if (langBtn) langBtn.textContent = (lang === 'en') ? 'PT' : 'EN';
+      localStorage.setItem('siteLang', lang);
+      // recreate icons (some inner structure may change)
+      lucide.createIcons();
+    }
+
+    // theme toggle (mantive comportamento)
     lucide.createIcons();
     document.getElementById('themeToggle').addEventListener('click', () => {
       const html = document.documentElement;
       html.classList.toggle('dark');
       lucide.createIcons();
     });
+
+    // language toggle event
+    document.getElementById('langToggle').addEventListener('click', () => {
+      const current = localStorage.getItem('siteLang') || (navigator.language && navigator.language.startsWith('en') ? 'en' : 'pt');
+      const next = current === 'en' ? 'pt' : 'en';
+      setLanguage(next);
+    });
+
     // Show/hide on scroll
     const btn = document.getElementById("backToTop");
     window.addEventListener("scroll", () => {
@@ -404,10 +490,17 @@
     btn.addEventListener("click", () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
+
+    // inicializa idioma salvo ou detectado
+    (function initLang() {
+      const saved = localStorage.getItem('siteLang') || (navigator.language && navigator.language.startsWith('en') ? 'en' : 'pt');
+      setLanguage(saved);
+    })();
   </script>
   <!-- Footer -->
   <footer
-    class="border-t border-gray-300 dark:border-gray-700 text-center text-md text-gray-700 dark:text-gray-200 py-5 mt-20">
+    class="border-t border-gray-300 dark:border-gray-700 text-center text-md text-gray-700 dark:text-gray-200 py-5 mt-20"
+    data-i18n="footer.text">
     feito com mais bugs do que café ☕ — © 2026 matheus
   </footer>
 
